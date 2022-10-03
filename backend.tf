@@ -1,3 +1,5 @@
 terraform {
-  backend "http" {}
+  backend "gcs" {
+    prefix = "terraform/version2"
+  }
 }
